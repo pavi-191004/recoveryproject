@@ -1,15 +1,20 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CounterComponent } from './counter/counter.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule} from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { ConfirmComponent } from './confirm/confirm.component';
+import { PasswordRecoveryComponent } from './password-recovery/password-recovery.component';
 @Component({
   selector: 'app-root',
-  
-  imports: [RouterOutlet,CounterComponent,FormsModule],
+  standalone: true,
+  imports: [RouterOutlet,FormsModule,CommonModule,PasswordRecoveryComponent,ConfirmComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
+
 export class AppComponent {
-  title = 'module';
-  
+ 
+ title="module"
+
 }

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CounterComponent } from './counter.component';
+import { ConfirmComponent } from './confirm.component';
 
-describe('CounterComponent', () => {
-  let component: CounterComponent;
-  let fixture: ComponentFixture<CounterComponent>;
+describe('ConfirmComponent', () => {
+  let component: ConfirmComponent;
+  let fixture: ComponentFixture<ConfirmComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CounterComponent]
+      imports: [ConfirmComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CounterComponent);
+    fixture = TestBed.createComponent(ConfirmComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
